@@ -10,12 +10,12 @@
 		38978177117962D000D5CC8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38978176117962D000D5CC8F /* UIKit.framework */; };
 		389782B9117A311B00D5CC8F /* AQGridView+CellLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782A7117A311B00D5CC8F /* AQGridView+CellLayout.h */; };
 		389782BA117A311B00D5CC8F /* AQGridView+CellLocationDelegation.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782A8117A311B00D5CC8F /* AQGridView+CellLocationDelegation.h */; };
-		389782BB117A311B00D5CC8F /* AQGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782A9117A311B00D5CC8F /* AQGridView.h */; };
+		389782BB117A311B00D5CC8F /* AQGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782A9117A311B00D5CC8F /* AQGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		389782BC117A311B00D5CC8F /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 389782AA117A311B00D5CC8F /* AQGridView.m */; };
 		389782BE117A311B00D5CC8F /* AQGridViewCell+AQGridViewCellPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782AC117A311B00D5CC8F /* AQGridViewCell+AQGridViewCellPrivate.h */; };
-		389782BF117A311B00D5CC8F /* AQGridViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782AD117A311B00D5CC8F /* AQGridViewCell.h */; };
+		389782BF117A311B00D5CC8F /* AQGridViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782AD117A311B00D5CC8F /* AQGridViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		389782C0117A311B00D5CC8F /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 389782AE117A311B00D5CC8F /* AQGridViewCell.m */; };
-		389782C1117A311B00D5CC8F /* AQGridViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782AF117A311B00D5CC8F /* AQGridViewController.h */; };
+		389782C1117A311B00D5CC8F /* AQGridViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782AF117A311B00D5CC8F /* AQGridViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		389782C2117A311B00D5CC8F /* AQGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389782B0117A311B00D5CC8F /* AQGridViewController.m */; };
 		389782C3117A311B00D5CC8F /* AQGridViewData.h in Headers */ = {isa = PBXBuildFile; fileRef = 389782B1117A311B00D5CC8F /* AQGridViewData.h */; };
 		389782C4117A311B00D5CC8F /* AQGridViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 389782B2117A311B00D5CC8F /* AQGridViewData.m */; };
@@ -169,13 +169,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389782BB117A311B00D5CC8F /* AQGridView.h in Headers */,
+				389782BF117A311B00D5CC8F /* AQGridViewCell.h in Headers */,
+				389782C1117A311B00D5CC8F /* AQGridViewController.h in Headers */,
 				AA747D9F0F9514B9006C5449 /* AQGridView_Prefix.pch in Headers */,
 				389782B9117A311B00D5CC8F /* AQGridView+CellLayout.h in Headers */,
 				389782BA117A311B00D5CC8F /* AQGridView+CellLocationDelegation.h in Headers */,
-				389782BB117A311B00D5CC8F /* AQGridView.h in Headers */,
 				389782BE117A311B00D5CC8F /* AQGridViewCell+AQGridViewCellPrivate.h in Headers */,
-				389782BF117A311B00D5CC8F /* AQGridViewCell.h in Headers */,
-				389782C1117A311B00D5CC8F /* AQGridViewController.h in Headers */,
 				389782C3117A311B00D5CC8F /* AQGridViewData.h in Headers */,
 				389782C5117A311B00D5CC8F /* AQGridViewUpdateInfo.h in Headers */,
 				389782C7117A311B00D5CC8F /* AQGridViewUpdateItem.h in Headers */,
@@ -297,6 +297,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = AQGridView;
+				PUBLIC_HEADERS_FOLDER_PATH = include/AQGridView;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -316,6 +317,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = AQGridView;
+				PUBLIC_HEADERS_FOLDER_PATH = include/AQGridView;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
